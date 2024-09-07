@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+   <template id="header_footer_sale_order">
+          <div class="header">
+            <div class="row">
+                <div class="col-3 mb4" style="width:170px;">
+                    <img src="/mme_reports/static/src/img/mme.jpg" style="width:auto;height:90px;left:15px;"/>
+                    <br/>
+                    <p style="width:400px;font-size:10pt;margin-top:10px;">MAGHREB MÉTAL ENERGIE</p>
+                </div>
+
+                <div class="col-4" style="position:relative;left:100px;margin-top:120px;margin-bottom:20px;">
+                    <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
+                    <span t-if="doc.state not in ['draft','sent']"><h5 style="text-align:center;font-size:25pt !important;">Bon de commande</h5> </span>
+                    <span t-if="doc.state in ['draft','sent']"><h1 style="text-align:center;font-size:25pt !important;">Devis</h1> </span>
+                     </t>
+                    <t t-if="env.context.get('proforma', False) or is_pro_forma">
+                    <span><h5 style="text-align:center;font-size:25pt !important;">Facture Pro-Forma </h5></span>
+
+                    </t>
+                </div>
+
+                <div class="col-5" style="position:relative;left:200px;margin-right:0px;margin-top:20px;font-size:16pt !important;">
+                    <ul style="position:centre;list-style-type:none;">
+                        <li t-if="doc.state not in ['draft','sent']">Numéro  :<span t-field="doc.name"/></li>
+                        <li t-if="doc.state in ['draft','sent']">Numéro devis :<span t-field="doc.name"/></li>
+                        <li>Date :<span t-esc="doc.date_order" t-options="{&quot;widget&quot;:&quot;date&quot;}"/></li>
+                        <li>Page :<span class="page"/> / <span class="topage"/></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="text-align:center;;font-size:15pt !important;">
+            <hr style="background-color:black;"/>
+            <p style="text-align:center;font-size:11pt !important;">
+              MAGHREB MATAL ENERGIE-Adresse: 1er Etage ,257.ZI Sud Oeust Mohammedia-Tél:0523320499 -<br/>
+
+Email:contact@maghrebmetal.com-SiteWeb:http://www.maghrebmtal.com-ICE: 003357379000080<br/>
+
+RIB : MA64 007 787 0000173000002926 79
+
+            </p>
+
+        </div>
+
+
+    </template>
+
+  </data>
+</odoo>

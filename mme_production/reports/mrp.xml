@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Personnalisation du modèle de rapport pour les commandes de vente -->
+        <template id="mrp_report_inherit" inherit_id="mrp.report_mrporder">
+            <xpath expr="//t[@t-name='mrp.report_mrporder']" position="replace">
+                <t t-call="web.html_container">
+                    <t t-call="web.basic_layout">
+                        <t t-foreach="docs" t-as="o">
+                            <!-- Appel des entêtes et pieds de page personnalisés -->
+                            <t t-call="mme_production.header_footer_mrp"/>
+
+                            <div style="padding-top: 40px;">
+                                <h3>
+                                    <span>
+                                        Informations
+                                    </span>
+                                </h3>
+                                <table class="table table-bordered">
+                                    <tbody>
+
+                                        <tr>
+                                            <td>BC client :
+
+                                            </td>
+                                            <td>
+                                                <span t-field="o.sale_order_id.name"/>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Catégorie :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.product_id.name"/>
+                                            </td>
+
+
+                                        </tr>
+                                         <tr t-foreach="o.product_id.product_template_variant_value_ids" t-as="line6">
+                                            <td><span t-field="line6.attribute_id.name"/> :
+                                            </td>
+                                            <td>
+                                                <span t-field="line6.product_attribute_value_id.name"/>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Diamètre extérieur :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.product_id.jauge_id.diametre_ext"/>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Longueur virole :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.product_id.jauge_id.longeur_v"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Trou d’homme :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.trou.name"/>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Entraxe berceaux :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.entraxe.name"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Norme de construction :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.norme.name"/>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Matière :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.matiere.name"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fonds :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.fonds.name"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revêtement standard :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.origin"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Responsable de production :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.user_id.name"/>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>Responsable de Contrôle :
+                                            </td>
+                                            <td>
+                                                <span t-field="o.user_control_id.name"/>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <h3>
+                                <span>
+                                    Remarques
+                                </span>
+                            </h3>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td>
+<div style="padding-top: 120px;"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="padding-top: 20px;">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center; vertical-align: middle;">Visa superviseur</td>
+                                        <td style="text-align: center; vertical-align: middle;">Visa Res.Production</td>
+                                    </tr>
+                                    <tr style="height: 150px;">
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                            <div t-if="o.workorder_ids" groups="mrp.group_mrp_routings">
+                                <h3>
+                                    <span t-if="o.state == 'done'">Opérations effectuées</span>
+                                    <span t-elif="o.is_planned">OPlanificateur des opérations</span>
+                                    <span t-else="">Opérations</span>
+                                </h3>
+                                <table class="table table-sm">
+                                    <tr>
+                                        <th>
+                                            <strong>Opération</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Poste de travail</strong>
+                                        </th>
+                                        <th>
+                                            <strong>Durée (minutes)</strong>
+                                        </th>
+                                        <th t-if="o.state in ('progress', 'to_close')">
+                                            <strong>Durée réelle (minutes)</strong>
+                                        </th>
+                                    </tr>
+                                    <tr t-foreach="o.workorder_ids" t-as="line2">
+                                        <td>
+                                            <span t-field="line2.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-field="line2.workcenter_id.name"/>
+                                        </td>
+                                        <td>
+                                            <span t-if="o.state != 'done'" t-field="line2.duration_expected"/>
+                                            <span t-if="o.state == 'done'" t-field="line2.duration"/>
+                                        </td>
+                                        <td t-if="o.state in ('progress', 'to_close')">
+                                            <span t-field="line2.duration"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <h3>
+                                <span>
+                                    Nomenclature
+                                </span>
+                            </h3>
+                            <table class="table table-sm">
+                                <t t-set="has_product_barcode"
+                                   t-value="any(m.product_id.barcode for m in o.move_raw_ids)"/>
+                                <thead>
+                                    <tr>
+                                        <th>Produit</th>
+                                        <th t-if="o.state in ('progress', 'to_close','done')"
+                                            t-attf-class="{{ 'text-end' if not has_product_barcode else '' }}">Consommé
+                                        </th>
+                                        <th t-attf-class="{{ 'text-end' if not has_product_barcode else '' }}">À
+                                            consommer
+                                        </th>
+                                        <th t-if="has_product_barcode" width="15%" class="text-center">Code à barres
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.move_raw_ids" t-as="raw_line">
+                                        <td>
+                                            <span t-field="raw_line.product_id"/>
+                                        </td>
+                                        <td t-attf-class="{{ 'text-end' if not has_product_barcode else '' }}"
+                                            t-if="o.state in ('progress', 'to_close','done')">
+                                            <div>
+                                                <span t-field="raw_line.quantity_done"/>
+                                            </div>
+                                        </td>
+                                        <td t-attf-class="{{ 'text-end' if not has_product_barcode else '' }}">
+                                            <span t-field="raw_line.product_uom_qty"/>
+                                            <span t-field="raw_line.product_uom" groups="uom.group_uom"/>
+                                        </td>
+                                        <td t-if="has_product_barcode" width="15%" class="text-center">
+                                            <t t-if="raw_line.product_id.barcode">
+                                                <div t-field="raw_line.product_id.barcode"
+                                                     t-options="{'widget': 'barcode', 'width': 600, 'height': 100, 'img_style': 'width:100%;height:35px'}"/>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </t>
+                    </t>
+
+                </t>
+
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

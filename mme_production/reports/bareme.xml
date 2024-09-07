@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Personnalisation du modèle de rapport pour les commandes de vente -->
+        <template id="bareme_report">
+            <t t-call="web.html_container">
+                <t t-set="layout" t-value="{'orientation': 'landscape'}"/>
+                <t t-call="web.basic_layout">
+                    <t t-foreach="docs" t-as="o">
+                        <t t-call="mme_production.header_footer_bareme"/>
+                        <div style="padding-top: 40px;"/>
+
+                        <!-- Conteneur principal pour les tableaux -->
+                        <div style="display: flex; flex-wrap: nowrap; gap: 5px;">
+                            <!-- Premier tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur H</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <t t-set="sixth_length" t-value="int(len(o.product_id.jauge_id.values_ids) / 6)"/>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[:sixth_length]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+
+                            <!-- Deuxième tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur H</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[sixth_length:2*sixth_length]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+
+                            <!-- Troisième tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur H</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[2*sixth_length:3*sixth_length]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+
+                            <!-- Quatrième tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[3*sixth_length:4*sixth_length]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+
+                            <!-- Cinquième tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[4*sixth_length:5*sixth_length]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+
+                            <!-- Sixième tableau -->
+                            <table style="width: 15%; display: inline-block;">
+                                <tr>
+                                    <th><strong>Hauteur H</strong></th>
+                                    <th><strong>Volume</strong></th>
+                                </tr>
+                                <tr t-foreach="o.product_id.jauge_id.values_ids[5*sixth_length:]" t-as="line">
+                                    <td><span t-field="line.hauteur"/></td>
+                                    <td><span t-field="line.volume"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+        <!-- Définition du modèle pour le tableau -->
+        <record model="ir.actions.report" id="action_bareme_report">
+            <field name="name">Barème de jaugeage</field>
+            <field name="model">mrp.production</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">mme_production.bareme_report</field>
+            <field name="binding_model_id" ref="model_mrp_production"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

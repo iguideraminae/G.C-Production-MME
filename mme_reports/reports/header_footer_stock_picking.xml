@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="header_footer_stock_picking">
+            <div class="header">
+                <div class="row">
+                    <div class="col-3 mb4" style="width:170px;">
+                        <img src="/mme_reports/static/src/img/mme.jpg" style="width:auto;height:90px;left:15px;"/>
+                        <br/>
+                        <p style="width:400px;font-size:10pt;margin-top:10px;">MAGHREB MÉTAL ENERGIE</p>
+                    </div>
+                    <div class="col-4" style="position:relative;left:100px;margin-top:110px;margin-bottom:30px;">
+                        <t>
+                            <span t-if="o.picking_type_id.code=='outgoing'">
+                                <h5 style="text-align:center;font-size:25pt !important;">Bon de livraison</h5>
+                            </span>
+                            <span t-if="o.picking_type_id.code=='incoming'">
+                                <h5 style="text-align:center;font-size:25pt !important;">Bon de Réception</h5>
+                            </span>
+                        </t>
+                    </div>
+                    <div class="col-5"
+                         style="position:relative;left:200px;margin-right:0px;margin-top:20px;font-size:16pt !important;">
+                        <ul style="position:centre;list-style-type:none;">
+                            <li>Numéro :
+                                <span t-field="doc.name"/>
+                            </li>
+
+                            <li>Date :
+                                <span t-esc="doc.date"/>
+                            </li>
+                            <li>Page :
+                                <span class="page"/>
+                                /
+                                <span class="topage"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="text-align:center;;font-size:15pt !important;">
+                <hr style="background-color:black;"/>
+                <p style="text-align:center;font-size:11pt !important;">
+                    MAGHREB MATAL ENERGIE-Adresse: 1er Etage ,257.ZI Sud Oeust Mohammedia-Tél:0523320499 -
+                    <br/>
+                    Email:contact@maghrebmetal.com-SiteWeb:http://www.maghrebmtal.com-ICE: 003357379000080
+                    <br/>
+                    RIB : MA64 007 787 0000173000002926 79
+                </p>
+            </div>
+        </template>
+    </data>
+</odoo>

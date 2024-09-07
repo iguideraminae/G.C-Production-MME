@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="jauge_form_view">
+        <field name="name">jauge.form</field>
+        <field name="model">product.jauge</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1>
+                        <label string="Référence " for="name"/>
+                        <field name="name" class="oe_inline"/>
+                    </h1>
+                    <group>
+                        <group>
+                            <field name="volume_m3"/>
+                            <field name="diametre_ext"/>
+                            <field name="longeur_v"/>
+                        </group>
+                        <group>
+                            <field name="longueur_t"/>
+                            <field name="hauteur"/>
+                            <field name="bords"/>
+                        </group>
+                    </group>
+                    <field name="values_ids">
+                        <tree editable="bottom">
+                            <field name="hauteur"/>
+                            <field name="volume"/>
+                            <field name="jauge_id" invisible="1"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="jauge_tree_view">
+        <field name="name">jauge.form</field>
+        <field name="model">product.jauge</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="volume_m3"/>
+                <field name="diametre_ext"/>
+                <field name="longeur_v"/>
+                <field name="longueur_t"/>
+                <field name="hauteur"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_jauge">
+        <field name="name">Barème de jaugeage</field>
+        <field name="res_model">product.jauge</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            parent="quality_control_oca.qc_menu"
+            name="Barème de jaugeage"
+            id="jauge_menu_parent"
+            groups="quality_control_oca.group_quality_control_manager"
+            sequence="30"
+    />
+    <menuitem
+            name="Barème de jaugeage"
+            parent="quality_control_oca.qc_quality_menu"
+            id="jauge_menu"
+            groups="quality_control_oca.group_quality_control_manager"
+            action="action_jauge"
+
+    />
+</odoo>

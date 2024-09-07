@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record model="qc.trigger" id="qc_trigger_mrp">
+        <field name="name">Production</field>
+        <field name="company_id" />
+    </record>
+</odoo>

@@ -64,14 +64,10 @@ L'objectif du projet est de fournir une **solution intégrée** et centralisée,
    ```bash
    git clone https://github.com/username/nom-du-projet.git
    ```
-2. Installez les dépendances requises :
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Configurez la base de données PostgreSQL et mettez à jour le fichier de configuration d'Odoo (`odoo.conf`) avec les informations nécessaires.
+2.mettez à jour le fichier de configuration d'Odoo (`odoo.conf`) avec les informations nécessaires.
 4. Démarrez le serveur Odoo :
    ```bash
-   ./odoo-bin --addons-path=addons,custom_addons -d nom_base_de_donnees
+   service odoo16 restart 
    ```
 5. Accédez à l'interface Odoo à l'adresse : `http://localhost:8069`
-6. Connectez-vous à Odoo et activez les modules nécessaires pour la gestion de la production.
+6. Connectez-vous à Odoo et activez le module Production MME.
