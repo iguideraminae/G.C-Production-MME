@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Les valeurs associées à la jauge_5m3 -->
+        <record id="jauge_5m3_value_01" model="jauge.values">
+            <field name="hauteur">0.01</field>
+            <field name="volume">4</field>
+        </record>
+
+        <record id="jauge_5m3_value_02" model="jauge.values">
+            <field name="hauteur">0.02</field>
+            <field name="volume">12</field>
+        </record>
+        <record id="jauge_5m3_value_03" model="jauge.values">
+            <field name="hauteur">0.03</field>
+            <field name="volume">22</field>
+        </record>
+        <record id="jauge_5m3_value_04" model="jauge.values">
+            <field name="hauteur">0.04</field>
+            <field name="volume">35</field>
+        </record>
+        <record id="jauge_5m3_value_05" model="jauge.values">
+            <field name="hauteur">0.05</field>
+            <field name="volume">48</field>
+        </record>
+        <record id="jauge_5m3_value_06" model="jauge.values">
+            <field name="hauteur">0.06</field>
+            <field name="volume">64</field>
+        </record>
+        <record id="jauge_5m3_value_07" model="jauge.values">
+            <field name="hauteur">0.07</field>
+            <field name="volume">80</field>
+        </record>
+        <record id="jauge_5m3_value_08" model="jauge.values">
+            <field name="hauteur">0.08</field>
+            <field name="volume">98</field>
+        </record>
+        <record id="jauge_5m3_value_09" model="jauge.values">
+            <field name="hauteur">0.09</field>
+            <field name="volume">117</field>
+        </record>
+        <record id="jauge_5m3_value_10" model="jauge.values">
+            <field name="hauteur">0.10</field>
+            <field name="volume">137</field>
+        </record>
+        <record id="jauge_5m3_value_11" model="jauge.values">
+            <field name="hauteur">0.11</field>
+            <field name="volume">158</field>
+        </record>
+        <record id="jauge_5m3_value_12" model="jauge.values">
+            <field name="hauteur">0.12</field>
+            <field name="volume">180</field>
+        </record>
+        <record id="jauge_5m3_value_13" model="jauge.values">
+            <field name="hauteur">0.13</field>
+            <field name="volume">203</field>
+        </record>
+        <record id="jauge_5m3_value_14" model="jauge.values">
+            <field name="hauteur">0.14</field>
+            <field name="volume">226</field>
+        </record>
+        <record id="jauge_5m3_value_15" model="jauge.values">
+            <field name="hauteur">0.15</field>
+            <field name="volume">251</field>
+        </record>
+        <record id="jauge_5m3_value_16" model="jauge.values">
+            <field name="hauteur">0.16</field>
+            <field name="volume">276</field>
+        </record>
+        <record id="jauge_5m3_value_17" model="jauge.values">
+            <field name="hauteur">0.17</field>
+            <field name="volume">302</field>
+        </record>
+        <record id="jauge_5m3_value_18" model="jauge.values">
+            <field name="hauteur">0.18</field>
+            <field name="volume">329</field>
+        </record>
+        <record id="jauge_5m3_value_19" model="jauge.values">
+            <field name="hauteur">0.19</field>
+            <field name="volume">356</field>
+        </record>
+        <record id="jauge_5m3_value_20" model="jauge.values">
+            <field name="hauteur">0.20</field>
+            <field name="volume">384</field>
+        </record>
+        <record id="jauge_5m3_value_21" model="jauge.values">
+            <field name="hauteur">0.21</field>
+            <field name="volume">413</field>
+        </record>
+        <record id="jauge_5m3_value_22" model="jauge.values">
+            <field name="hauteur">0.22</field>
+            <field name="volume">443</field>
+        </record>
+        <record id="jauge_5m3_value_23" model="jauge.values">
+            <field name="hauteur">0.23</field>
+            <field name="volume">472</field>
+        </record>
+        <record id="jauge_5m3_value_24" model="jauge.values">
+            <field name="hauteur">0.24</field>
+            <field name="volume">503</field>
+        </record>
+        <record id="jauge_5m3_value_25" model="jauge.values">
+            <field name="hauteur">0.25</field>
+            <field name="volume">534</field>
+        </record>
+        <record id="jauge_5m3_value_26" model="jauge.values">
+            <field name="hauteur">0.26</field>
+            <field name="volume">565</field>
+        </record>
+        <record id="jauge_5m3_value_27" model="jauge.values">
+            <field name="hauteur">0.27</field>
+            <field name="volume">597</field>
+        </record>
+        <record id="jauge_5m3_value_28" model="jauge.values">
+            <field name="hauteur">0.28</field>
+            <field name="volume">629</field>
+        </record>
+        <record id="jauge_5m3_value_29" model="jauge.values">
+            <field name="hauteur">0.29</field>
+            <field name="volume">662</field>
+        </record>
+        <record id="jauge_5m3_value_30" model="jauge.values">
+            <field name="hauteur">0.30</field>
+            <field name="volume">696</field>
+        </record>
+        <record id="jauge_5m3_value_31" model="jauge.values">
+            <field name="hauteur">0.31</field>
+            <field name="volume">730</field>
+        </record>
+        <record id="jauge_5m3_value_32" model="jauge.values">
+            <field name="hauteur">0.32</field>
+            <field name="volume">764</field>
+        </record>
+        <record id="jauge_5m3_value_33" model="jauge.values">
+            <field name="hauteur">0.33</field>
+            <field name="volume">799</field>
+        </record>
+        <record id="jauge_5m3_value_34" model="jauge.values">
+            <field name="hauteur">0.34</field>
+            <field name="volume">834</field>
+        </record>
+        <record id="jauge_5m3_value_35" model="jauge.values">
+            <field name="hauteur">0.35</field>
+            <field name="volume">870</field>
+        </record>
+        <record id="jauge_5m3_value_36" model="jauge.values">
+            <field name="hauteur">0.36</field>
+            <field name="volume">906</field>
+        </record>
+        <record id="jauge_5m3_value_37" model="jauge.values">
+            <field name="hauteur">0.37</field>
+            <field name="volume">942</field>
+        </record>
+        <record id="jauge_5m3_value_38" model="jauge.values">
+            <field name="hauteur">0.38</field>
+            <field name="volume">979</field>
+        </record>
+        <record id="jauge_5m3_value_39" model="jauge.values">
+            <field name="hauteur">0.39</field>
+            <field name="volume">1017</field>
+        </record>
+        <record id="jauge_5m3_value_40" model="jauge.values">
+            <field name="hauteur">0.40</field>
+            <field name="volume">1054</field>
+        </record>
+        <record id="jauge_5m3_value_41" model="jauge.values">
+            <field name="hauteur">0.41</field>
+            <field name="volume">1092</field>
+        </record>
+        <record id="jauge_5m3_value_42" model="jauge.values">
+            <field name="hauteur">0.42</field>
+            <field name="volume">1130</field>
+        </record>
+        <record id="jauge_5m3_value_43" model="jauge.values">
+            <field name="hauteur">0.43</field>
+            <field name="volume">1169</field>
+        </record>
+        <record id="jauge_5m3_value_44" model="jauge.values">
+            <field name="hauteur">0.44</field>
+            <field name="volume">1208</field>
+        </record>
+        <record id="jauge_5m3_value_45" model="jauge.values">
+            <field name="hauteur">0.45</field>
+            <field name="volume">1246</field>
+        </record>
+        <record id="jauge_5m3_value_46" model="jauge.values">
+            <field name="hauteur">0.46</field>
+            <field name="volume">1285</field>
+        </record>
+        <record id="jauge_5m3_value_47" model="jauge.values">
+            <field name="hauteur">0.47</field>
+            <field name="volume">1325</field>
+        </record>
+        <record id="jauge_5m3_value_48" model="jauge.values">
+            <field name="hauteur">0.48</field>
+            <field name="volume">1364</field>
+        </record>
+        <record id="jauge_5m3_value_49" model="jauge.values">
+            <field name="hauteur">0.49</field>
+            <field name="volume">1403</field>
+        </record>
+        <record id="jauge_5m3_value_50" model="jauge.values">
+            <field name="hauteur">0.50</field>
+            <field name="volume">1443</field>
+        </record>
+        <record id="jauge_5m3_value_51" model="jauge.values">
+            <field name="hauteur">0.51</field>
+            <field name="volume">1.487</field>
+        </record>
+        <record id="jauge_5m3_value_52" model="jauge.values">
+            <field name="hauteur">0.52</field>
+            <field name="volume">1.528</field>
+        </record>
+        <record id="jauge_5m3_value_53" model="jauge.values">
+            <field name="hauteur">0.53</field>
+            <field name="volume">1.569</field>
+        </record>
+        <record id="jauge_5m3_value_54" model="jauge.values">
+            <field name="hauteur">0.54</field>
+            <field name="volume">1.610</field>
+        </record>
+        <record id="jauge_5m3_value_55" model="jauge.values">
+            <field name="hauteur">0.55</field>
+            <field name="volume">1.651</field>
+        </record>
+        <record id="jauge_5m3_value_56" model="jauge.values">
+            <field name="hauteur">0.56</field>
+            <field name="volume">1.693</field>
+        </record>
+        <record id="jauge_5m3_value_57" model="jauge.values">
+            <field name="hauteur">0.57</field>
+            <field name="volume">1.734</field>
+        </record>
+        <record id="jauge_5m3_value_58" model="jauge.values">
+            <field name="hauteur">0.58</field>
+            <field name="volume">1.776</field>
+        </record>
+        <record id="jauge_5m3_value_59" model="jauge.values">
+            <field name="hauteur">0.59</field>
+            <field name="volume">1.818</field>
+        </record>
+        <record id="jauge_5m3_value_60" model="jauge.values">
+            <field name="hauteur">0.60</field>
+            <field name="volume">1.860</field>
+        </record>
+        <record id="jauge_5m3_value_61" model="jauge.values">
+            <field name="hauteur">0.61</field>
+            <field name="volume">1.902</field>
+        </record>
+        <record id="jauge_5m3_value_62" model="jauge.values">
+            <field name="hauteur">0.62</field>
+            <field name="volume">1.944</field>
+        </record>
+        <record id="jauge_5m3_value_63" model="jauge.values">
+            <field name="hauteur">0.63</field>
+            <field name="volume">1.987</field>
+        </record>
+        <record id="jauge_5m3_value_64" model="jauge.values">
+            <field name="hauteur">0.64</field>
+            <field name="volume">2.029</field>
+        </record>
+        <record id="jauge_5m3_value_65" model="jauge.values">
+            <field name="hauteur">0.65</field>
+            <field name="volume">2.072</field>
+        </record>
+        <record id="jauge_5m3_value_66" model="jauge.values">
+            <field name="hauteur">0.66</field>
+            <field name="volume">2.114</field>
+        </record>
+        <record id="jauge_5m3_value_67" model="jauge.values">
+            <field name="hauteur">0.67</field>
+            <field name="volume">2.157</field>
+        </record>
+        <record id="jauge_5m3_value_68" model="jauge.values">
+            <field name="hauteur">0.68</field>
+            <field name="volume">2.200</field>
+        </record>
+        <record id="jauge_5m3_value_69" model="jauge.values">
+            <field name="hauteur">0.69</field>
+            <field name="volume">2.243</field>
+        </record>
+        <record id="jauge_5m3_value_70" model="jauge.values">
+            <field name="hauteur">0.70</field>
+            <field name="volume">2.286</field>
+        </record>
+        <record id="jauge_5m3_value_71" model="jauge.values">
+            <field name="hauteur">0.71</field>
+            <field name="volume">2.329</field>
+        </record>
+        <record id="jauge_5m3_value_72" model="jauge.values">
+            <field name="hauteur">0.72</field>
+            <field name="volume">2.372</field>
+        </record>
+        <record id="jauge_5m3_value_73" model="jauge.values">
+            <field name="hauteur">0.73</field>
+            <field name="volume">2.415</field>
+        </record>
+        <record id="jauge_5m3_value_74" model="jauge.values">
+            <field name="hauteur">0.74</field>
+            <field name="volume">2.458</field>
+        </record>
+        <record id="jauge_5m3_value_75" model="jauge.values">
+            <field name="hauteur">0.75</field>
+            <field name="volume">2.501</field>
+        </record>
+        <record id="jauge_5m3_value_76" model="jauge.values">
+            <field name="hauteur">0.76</field>
+            <field name="volume">2.544</field>
+        </record>
+        <record id="jauge_5m3_value_77" model="jauge.values">
+            <field name="hauteur">0.77</field>
+            <field name="volume">2.587</field>
+        </record>
+        <record id="jauge_5m3_value_78" model="jauge.values">
+            <field name="hauteur">0.78</field>
+            <field name="volume">2.630</field>
+        </record>
+        <record id="jauge_5m3_value_79" model="jauge.values">
+            <field name="hauteur">0.79</field>
+            <field name="volume">2.673</field>
+        </record>
+        <record id="jauge_5m3_value_80" model="jauge.values">
+            <field name="hauteur">0.80</field>
+            <field name="volume">2.716</field>
+        </record>
+        <record id="jauge_5m3_value_81" model="jauge.values">
+            <field name="hauteur">0.81</field>
+            <field name="volume">2.759</field>
+        </record>
+        <record id="jauge_5m3_value_82" model="jauge.values">
+            <field name="hauteur">0.82</field>
+            <field name="volume">2.802</field>
+        </record>
+        <record id="jauge_5m3_value_83" model="jauge.values">
+            <field name="hauteur">0.83</field>
+            <field name="volume">2.845</field>
+        </record>
+        <record id="jauge_5m3_value_84" model="jauge.values">
+            <field name="hauteur">0.84</field>
+            <field name="volume">2.887</field>
+        </record>
+        <record id="jauge_5m3_value_85" model="jauge.values">
+            <field name="hauteur">0.85</field>
+            <field name="volume">2.930</field>
+        </record>
+        <record id="jauge_5m3_value_86" model="jauge.values">
+            <field name="hauteur">0.86</field>
+            <field name="volume">2.973</field>
+        </record>
+        <record id="jauge_5m3_value_87" model="jauge.values">
+            <field name="hauteur">0.87</field>
+            <field name="volume">3.015</field>
+        </record>
+        <record id="jauge_5m3_value_88" model="jauge.values">
+            <field name="hauteur">0.88</field>
+            <field name="volume">3.057</field>
+        </record>
+        <record id="jauge_5m3_value_89" model="jauge.values">
+            <field name="hauteur">0.89</field>
+            <field name="volume">3.100</field>
+        </record>
+        <record id="jauge_5m3_value_90" model="jauge.values">
+            <field name="hauteur">0.90</field>
+            <field name="volume">3.142</field>
+        </record>
+        <record id="jauge_5m3_value_91" model="jauge.values">
+            <field name="hauteur">0.91</field>
+            <field name="volume">3.184</field>
+        </record>
+        <record id="jauge_5m3_value_92" model="jauge.values">
+            <field name="hauteur">0.92</field>
+            <field name="volume">3.226</field>
+        </record>
+        <record id="jauge_5m3_value_93" model="jauge.values">
+            <field name="hauteur">0.93</field>
+            <field name="volume">3.268</field>
+        </record>
+        <record id="jauge_5m3_value_94" model="jauge.values">
+            <field name="hauteur">0.94</field>
+            <field name="volume">3.309</field>
+        </record>
+        <record id="jauge_5m3_value_95" model="jauge.values">
+            <field name="hauteur">0.95</field>
+            <field name="volume">3.351</field>
+        </record>
+        <record id="jauge_5m3_value_96" model="jauge.values">
+            <field name="hauteur">0.96</field>
+            <field name="volume">3.392</field>
+        </record>
+        <record id="jauge_5m3_value_97" model="jauge.values">
+            <field name="hauteur">0.97</field>
+            <field name="volume">3.433</field>
+        </record>
+        <record id="jauge_5m3_value_98" model="jauge.values">
+            <field name="hauteur">0.98</field>
+            <field name="volume">3.474</field>
+        </record>
+        <record id="jauge_5m3_value_99" model="jauge.values">
+            <field name="hauteur">0.99</field>
+            <field name="volume">3.515</field>
+        </record>
+        <record id="jauge_5m3_value_100" model="jauge.values">
+            <field name="hauteur">1.00</field>
+            <field name="volume">3.555</field>
+        </record>
+        <record id="jauge_5m3_value_101" model="jauge.values">
+            <field name="hauteur">1.01</field>
+            <field name="volume">3.595</field>
+        </record>
+        <record id="jauge_5m3_value_102" model="jauge.values">
+            <field name="hauteur">1.02</field>
+            <field name="volume">3.635</field>
+        </record>
+        <record id="jauge_5m3_value_103" model="jauge.values">
+            <field name="hauteur">1.03</field>
+            <field name="volume">3.675</field>
+        </record>
+        <record id="jauge_5m3_value_104" model="jauge.values">
+            <field name="hauteur">1.04</field>
+            <field name="volume">3.715</field>
+        </record>
+        <record id="jauge_5m3_value_105" model="jauge.values">
+            <field name="hauteur">1.05</field>
+            <field name="volume">3.754</field>
+        </record>
+        <record id="jauge_5m3_value_106" model="jauge.values">
+            <field name="hauteur">1.06</field>
+            <field name="volume">3.793</field>
+        </record>
+        <record id="jauge_5m3_value_107" model="jauge.values">
+            <field name="hauteur">1.07</field>
+            <field name="volume">3.832</field>
+        </record>
+        <record id="jauge_5m3_value_108" model="jauge.values">
+            <field name="hauteur">1.08</field>
+            <field name="volume">3.870</field>
+        </record>
+        <record id="jauge_5m3_value_109" model="jauge.values">
+            <field name="hauteur">1.09</field>
+            <field name="volume">3.908</field>
+        </record>
+        <record id="jauge_5m3_value_110" model="jauge.values">
+            <field name="hauteur">1.10</field>
+            <field name="volume">3.946</field>
+        </record>
+        <record id="jauge_5m3_value_111" model="jauge.values">
+            <field name="hauteur">1.11</field>
+            <field name="volume">3.984</field>
+        </record>
+        <record id="jauge_5m3_value_112" model="jauge.values">
+            <field name="hauteur">1.12</field>
+            <field name="volume">4.021</field>
+        </record>
+        <record id="jauge_5m3_value_113" model="jauge.values">
+            <field name="hauteur">1.13</field>
+            <field name="volume">4.058</field>
+        </record>
+        <record id="jauge_5m3_value_114" model="jauge.values">
+            <field name="hauteur">1.14</field>
+            <field name="volume">4.094</field>
+        </record>
+        <record id="jauge_5m3_value_115" model="jauge.values">
+            <field name="hauteur">1.15</field>
+            <field name="volume">4.130</field>
+        </record>
+        <record id="jauge_5m3_value_116" model="jauge.values">
+            <field name="hauteur">1.16</field>
+            <field name="volume">4.166</field>
+        </record>
+        <record id="jauge_5m3_value_117" model="jauge.values">
+            <field name="hauteur">1.17</field>
+            <field name="volume">4.201</field>
+        </record>
+        <record id="jauge_5m3_value_118" model="jauge.values">
+            <field name="hauteur">1.18</field>
+            <field name="volume">4.236</field>
+        </record>
+        <record id="jauge_5m3_value_119" model="jauge.values">
+            <field name="hauteur">1.19</field>
+            <field name="volume">4.271</field>
+        </record>
+        <record id="jauge_5m3_value_120" model="jauge.values">
+            <field name="hauteur">1.20</field>
+            <field name="volume">4.305</field>
+        </record>
+        <record id="jauge_5m3_value_121" model="jauge.values">
+            <field name="hauteur">1.21</field>
+            <field name="volume">4.338</field>
+        </record>
+        <record id="jauge_5m3_value_122" model="jauge.values">
+            <field name="hauteur">1.22</field>
+            <field name="volume">4.371</field>
+        </record>
+        <record id="jauge_5m3_value_123" model="jauge.values">
+            <field name="hauteur">1.23</field>
+            <field name="volume">4.404</field>
+        </record>
+        <record id="jauge_5m3_value_124" model="jauge.values">
+            <field name="hauteur">1.24</field>
+            <field name="volume">4.436</field>
+        </record>
+        <record id="jauge_5m3_value_125" model="jauge.values">
+            <field name="hauteur">1.25</field>
+            <field name="volume">4.468</field>
+        </record>
+        <record id="jauge_5m3_value_126" model="jauge.values">
+            <field name="hauteur">1.26</field>
+            <field name="volume">4.499</field>
+        </record>
+        <record id="jauge_5m3_value_127" model="jauge.values">
+            <field name="hauteur">1.27</field>
+            <field name="volume">4.529</field>
+        </record>
+        <record id="jauge_5m3_value_128" model="jauge.values">
+            <field name="hauteur">1.28</field>
+            <field name="volume">4.559</field>
+        </record>
+        <record id="jauge_5m3_value_129" model="jauge.values">
+            <field name="hauteur">1.29</field>
+            <field name="volume">4.589</field>
+        </record>
+        <record id="jauge_5m3_value_130" model="jauge.values">
+            <field name="hauteur">1.30</field>
+            <field name="volume">4.617</field>
+        </record>
+        <record id="jauge_5m3_value_131" model="jauge.values">
+            <field name="hauteur">1.31</field>
+            <field name="volume">4.645</field>
+        </record>
+        <record id="jauge_5m3_value_132" model="jauge.values">
+            <field name="hauteur">1.32</field>
+            <field name="volume">4.673</field>
+        </record>
+        <record id="jauge_5m3_value_133" model="jauge.values">
+            <field name="hauteur">1.33</field>
+            <field name="volume">4.700</field>
+        </record>
+        <record id="jauge_5m3_value_134" model="jauge.values">
+            <field name="hauteur">1.34</field>
+            <field name="volume">4.726</field>
+        </record>
+        <record id="jauge_5m3_value_135" model="jauge.values">
+            <field name="hauteur">1.35</field>
+            <field name="volume">4.751</field>
+        </record>
+        <record id="jauge_5m3_value_136" model="jauge.values">
+            <field name="hauteur">1.36</field>
+            <field name="volume">4.775</field>
+        </record>
+        <record id="jauge_5m3_value_137" model="jauge.values">
+            <field name="hauteur">1.37</field>
+            <field name="volume">4.799</field>
+        </record>
+        <record id="jauge_5m3_value_138" model="jauge.values">
+            <field name="hauteur">1.38</field>
+            <field name="volume">4.822</field>
+        </record>
+        <record id="jauge_5m3_value_139" model="jauge.values">
+            <field name="hauteur">1.39</field>
+            <field name="volume">4.844</field>
+        </record>
+        <record id="jauge_5m3_value_140" model="jauge.values">
+            <field name="hauteur">1.40</field>
+            <field name="volume">4.865</field>
+        </record>
+        <record id="jauge_5m3_value_141" model="jauge.values">
+            <field name="hauteur">1.41</field>
+            <field name="volume">4.885</field>
+        </record>
+        <record id="jauge_5m3_value_142" model="jauge.values">
+            <field name="hauteur">1.42</field>
+            <field name="volume">4.904</field>
+        </record>
+        <record id="jauge_5m3_value_143" model="jauge.values">
+            <field name="hauteur">1.43</field>
+            <field name="volume">4.922</field>
+        </record>
+        <record id="jauge_5m3_value_144" model="jauge.values">
+            <field name="hauteur">1.44</field>
+            <field name="volume">4.938</field>
+        </record>
+        <record id="jauge_5m3_value_145" model="jauge.values">
+            <field name="hauteur">1.45</field>
+            <field name="volume">4.953</field>
+        </record>
+        <record id="jauge_5m3_value_146" model="jauge.values">
+            <field name="hauteur">1.46</field>
+            <field name="volume">4.967</field>
+        </record>
+        <record id="jauge_5m3_value_147" model="jauge.values">
+            <field name="hauteur">1.47</field>
+            <field name="volume">4.979</field>
+        </record>
+        <record id="jauge_5m3_value_148" model="jauge.values">
+            <field name="hauteur">1.48</field>
+            <field name="volume">4.990</field>
+        </record>
+        <record id="jauge_5m3_value_149" model="jauge.values">
+            <field name="hauteur">1.49</field>
+            <field name="volume">4.998</field>
+        </record>
+        <record id="jauge_5m3_value_x1" model="jauge.values">
+            <field name="hauteur">0</field>
+            <field name="volume">0</field>
+        </record>
+
+        <!-- jauge_5m3 -->
+        <record id="jauge_5m3" model="product.jauge">
+            <field name="name">Barème de jaugeage 5 M3</field>
+            <field name="volume_m3">5</field>
+            <field name="diametre_ext">1500</field>
+            <field name="longeur_v">2559</field>
+            <field name="longueur_t">3069</field>
+            <field name="hauteur">230</field>
+            <field name="bords">25</field>
+            <field name="values_ids" eval="[(6, 0, [
+                ref('jauge_5m3_value_01'),
+                ref('jauge_5m3_value_02'),
+                ref('jauge_5m3_value_03'),
+                ref('jauge_5m3_value_04'),
+                ref('jauge_5m3_value_05'),
+                ref('jauge_5m3_value_06'),
+                ref('jauge_5m3_value_07'),
+                ref('jauge_5m3_value_08'),
+                ref('jauge_5m3_value_09'),
+                ref('jauge_5m3_value_10'),
+                ref('jauge_5m3_value_11'),
+                ref('jauge_5m3_value_12'),
+                ref('jauge_5m3_value_13'),
+                ref('jauge_5m3_value_14'),
+                ref('jauge_5m3_value_15'),
+                ref('jauge_5m3_value_16'),
+                ref('jauge_5m3_value_17'),
+                ref('jauge_5m3_value_18'),
+                ref('jauge_5m3_value_19'),
+                ref('jauge_5m3_value_20'),
+                ref('jauge_5m3_value_21'),
+                ref('jauge_5m3_value_22'),
+                ref('jauge_5m3_value_23'),
+                ref('jauge_5m3_value_24'),
+                ref('jauge_5m3_value_25'),
+                ref('jauge_5m3_value_26'),
+                ref('jauge_5m3_value_27'),
+                ref('jauge_5m3_value_28'),
+                ref('jauge_5m3_value_29'),
+                ref('jauge_5m3_value_30'),
+                ref('jauge_5m3_value_31'),
+                ref('jauge_5m3_value_32'),
+                ref('jauge_5m3_value_33'),
+                ref('jauge_5m3_value_34'),
+                ref('jauge_5m3_value_35'),
+                ref('jauge_5m3_value_36'),
+                ref('jauge_5m3_value_37'),
+                ref('jauge_5m3_value_38'),
+                ref('jauge_5m3_value_39'),
+                ref('jauge_5m3_value_40'),
+                ref('jauge_5m3_value_41'),
+                ref('jauge_5m3_value_42'),
+                ref('jauge_5m3_value_43'),
+                ref('jauge_5m3_value_44'),
+                ref('jauge_5m3_value_45'),
+                ref('jauge_5m3_value_46'),
+                ref('jauge_5m3_value_47'),
+                ref('jauge_5m3_value_48'),
+                ref('jauge_5m3_value_49'),
+                ref('jauge_5m3_value_50'),
+                ref('jauge_5m3_value_51'),
+                ref('jauge_5m3_value_52'),
+                ref('jauge_5m3_value_53'),
+                ref('jauge_5m3_value_54'),
+                ref('jauge_5m3_value_55'),
+                ref('jauge_5m3_value_56'),
+                ref('jauge_5m3_value_57'),
+                ref('jauge_5m3_value_58'),
+                ref('jauge_5m3_value_59'),
+                ref('jauge_5m3_value_60'),
+                ref('jauge_5m3_value_61'),
+                ref('jauge_5m3_value_62'),
+                ref('jauge_5m3_value_63'),
+                ref('jauge_5m3_value_64'),
+                ref('jauge_5m3_value_65'),
+                ref('jauge_5m3_value_66'),
+                ref('jauge_5m3_value_67'),
+                ref('jauge_5m3_value_68'),
+                ref('jauge_5m3_value_69'),
+                ref('jauge_5m3_value_70'),
+                ref('jauge_5m3_value_71'),
+                ref('jauge_5m3_value_72'),
+                ref('jauge_5m3_value_73'),
+                ref('jauge_5m3_value_74'),
+                ref('jauge_5m3_value_75'),
+                ref('jauge_5m3_value_76'),
+                ref('jauge_5m3_value_77'),
+                ref('jauge_5m3_value_78'),
+                ref('jauge_5m3_value_79'),
+                ref('jauge_5m3_value_80'),
+                ref('jauge_5m3_value_81'),
+                ref('jauge_5m3_value_82'),
+                ref('jauge_5m3_value_83'),
+                ref('jauge_5m3_value_84'),
+                ref('jauge_5m3_value_85'),
+                ref('jauge_5m3_value_86'),
+                ref('jauge_5m3_value_87'),
+                ref('jauge_5m3_value_88'),
+                ref('jauge_5m3_value_89'),
+                ref('jauge_5m3_value_90'),
+                ref('jauge_5m3_value_91'),
+                ref('jauge_5m3_value_92'),
+                ref('jauge_5m3_value_93'),
+                ref('jauge_5m3_value_94'),
+                ref('jauge_5m3_value_95'),
+                ref('jauge_5m3_value_96'),
+                ref('jauge_5m3_value_97'),
+                ref('jauge_5m3_value_98'),
+                ref('jauge_5m3_value_99'),
+                ref('jauge_5m3_value_100'),
+                ref('jauge_5m3_value_101'),
+                ref('jauge_5m3_value_102'),
+                ref('jauge_5m3_value_103'),
+                ref('jauge_5m3_value_104'),
+                ref('jauge_5m3_value_105'),
+                ref('jauge_5m3_value_106'),
+                ref('jauge_5m3_value_107'),
+                ref('jauge_5m3_value_108'),
+                ref('jauge_5m3_value_109'),
+                ref('jauge_5m3_value_110'),
+                ref('jauge_5m3_value_111'),
+                ref('jauge_5m3_value_112'),
+                ref('jauge_5m3_value_113'),
+                ref('jauge_5m3_value_114'),
+                ref('jauge_5m3_value_115'),
+                ref('jauge_5m3_value_116'),
+                ref('jauge_5m3_value_117'),
+                ref('jauge_5m3_value_118'),
+                ref('jauge_5m3_value_119'),
+                ref('jauge_5m3_value_120'),
+                ref('jauge_5m3_value_121'),
+                ref('jauge_5m3_value_122'),
+                ref('jauge_5m3_value_123'),
+                ref('jauge_5m3_value_124'),
+                ref('jauge_5m3_value_125'),
+                ref('jauge_5m3_value_126'),
+                ref('jauge_5m3_value_127'),
+                ref('jauge_5m3_value_128'),
+                ref('jauge_5m3_value_129'),
+                ref('jauge_5m3_value_130'),
+                ref('jauge_5m3_value_131'),
+                ref('jauge_5m3_value_132'),
+                ref('jauge_5m3_value_133'),
+                ref('jauge_5m3_value_134'),
+                ref('jauge_5m3_value_135'),
+                ref('jauge_5m3_value_136'),
+                ref('jauge_5m3_value_137'),
+                ref('jauge_5m3_value_138'),
+                ref('jauge_5m3_value_139'),
+                ref('jauge_5m3_value_140'),
+                ref('jauge_5m3_value_141'),
+                ref('jauge_5m3_value_142'),
+                ref('jauge_5m3_value_143'),
+                ref('jauge_5m3_value_144'),
+                ref('jauge_5m3_value_145'),
+                ref('jauge_5m3_value_146'),
+                ref('jauge_5m3_value_147'),
+                ref('jauge_5m3_value_148'),
+                ref('jauge_5m3_value_149'),
+                ref('jauge_5m3_value_x1')
+            ])]"/>
+        </record>
+
+
+        <!-- jauge_10m3 -->
+        <record id="jauge_10m3" model="product.jauge">
+            <field name="name">Barème de jaugeage 10 M3</field>
+            <field name="volume_m3">10</field>
+            <field name="diametre_ext">1900</field>
+            <field name="longeur_v">3198</field>
+            <field name="longueur_t">3832</field>
+            <field name="hauteur">292</field>
+            <field name="bords">25</field>
+        </record>
+
+        <!-- jauge_20m3 -->
+        <record id="jauge_20m3" model="product.jauge">
+            <field name="name">Barème de jaugeage 20 M3</field>
+            <field name="volume_m3">20</field>
+            <field name="diametre_ext">2500</field>
+            <field name="longeur_v">3637</field>
+            <field name="longueur_t">4481</field>
+            <field name="hauteur">387</field>
+            <field name="bords">35</field>
+        </record>
+
+        <!-- jauge_30m3 -->
+        <record id="jauge_30m3" model="product.jauge">
+            <field name="name">Barème de jaugeage 30 M3</field>
+            <field name="volume_m3">30</field>
+            <field name="diametre_ext">2500</field>
+            <field name="longeur_v">5675</field>
+            <field name="longueur_t">6519</field>
+            <field name="hauteur">387</field>
+            <field name="bords">35</field>
+        </record>
+
+    </data>
+</odoo>
